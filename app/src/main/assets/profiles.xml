@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contents>
+    <LENSES>
+        <Lens>
+            <name>HELIOS 44-2 58mm F/2</name>
+            <mount>M42</mount>
+            <focal>58</focal>
+            <apertures>2-16</apertures>
+        </Lens>
+        <Lens>
+            <name>Rokkor 35-70mm f3.5 Macro </name>
+            <mount>MD</mount>
+            <focal>35-70</focal>
+            <apertures>3.5-22</apertures>
+        </Lens>
+        <Lens>
+            <name>MIR-24 35mm f/2</name>
+            <mount>M42</mount>
+            <focal>35</focal>
+            <apertures>2-16/3</apertures>
+        </Lens>
+        <Lens>
+            <name>VIVITAR S1 70-210mm f/3.5 Macro</name>
+            <mount>OM</mount>
+            <focal>70-210/5</focal>
+            <apertures>3.5-32/2</apertures>
+        </Lens>
+        <Lens>
+            <name>Pentacon 135mm f/2.8 preset</name>
+            <mount>M42</mount>
+            <focal>135</focal>
+            <apertures>2.8-32/3</apertures>
+        </Lens>
+        <Lens>
+            <name>NIKKOR 24mm f/2 AI-s</name>
+            <mount>F</mount>
+            <focal>24</focal>
+            <apertures>2-22</apertures>
+        </Lens>
+
+    </LENSES>
+    <SPECIALS>
+        <Special>
+            <name>LT II</name>
+            <math>0.72</math>
+            <description>Lens Turbo II Focal Reducer 0.72x</description>
+        </Special>
+        <Special>
+            <name>TC 1.4x</name>
+            <math>1.4</math>
+            <description>Tele converter 1.4x C/Y</description>
+        </Special>
+    </SPECIALS>
+</Contents>

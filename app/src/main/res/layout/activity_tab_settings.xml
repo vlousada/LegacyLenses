@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User settings:"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:layout_below="@+id/textView"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:id="@+id/tableRow">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Sort Lenses by name"
+            android:id="@+id/cb_sortLenses"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/tableRow2">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  enable Left/Right Keys"
+            android:id="@+id/cb_enableLRkeys"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableRow3"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="FF CoC (Dof)"
+            android:id="@+id/textView5"
+            android:textColor="#fd5501" />
+
+        <Spinner
+            android:layout_width="124dp"
+            android:layout_height="51dp"
+            android:id="@+id/sp_coc"
+            android:entries="@array/FF_Coc"/>
+
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE SETTINGS"
+        android:id="@+id/bt_saveSettings"
+        android:layout_below="@+id/tableRow3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

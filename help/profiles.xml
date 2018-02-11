@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contents>
+    <LENSES>
+        <Lens>
+            <name>ZENITAR-M2 16mm f2.8 MC</name>
+            <mount>M42</mount>
+            <focal>16</focal>
+            <apertures>2.8-22</apertures>
+        </Lens>
+        <Lens>
+            <name>MIR 20mm F3.5 MC</name>
+            <mount>M42</mount>
+            <focal>20</focal>
+            <apertures>3.5-16</apertures>
+        </Lens>
+        <Lens>
+            <name>ORION-15 28mm F6</name>
+            <mount>L39</mount>
+            <focal>28</focal>
+            <apertures>6-16</apertures>
+        </Lens>
+        <Lens>
+            <name>MIR-1V 37 mm f/ 2.8 Black</name>
+            <mount>M42</mount>
+            <focal>37</focal>
+            <apertures>2.8-16</apertures>
+        </Lens>
+		<Lens>
+            <name>RUBIN-1 37-80mm f2.8</name>
+            <mount>M42</mount>
+            <focal>37-80</focal>
+            <apertures>2.8-22</apertures>
+		</Lens>
+		<Lens>
+            <name>JUPITER-3 50mm f/1.5</name>
+            <mount>L39</mount>
+            <focal>50</focal>
+            <apertures>1.5-22/2</apertures>
+        </Lens>
+        <Lens>
+            <name> INDUSTAR-61 L/Z MC 50mm f2.8</name>
+            <mount>M42</mount>
+            <focal>50</focal>
+            <apertures>2.8-16</apertures>
+        </Lens>
+        <Lens>
+            <name>MC HELIOS 85-210mm f3.8 Macro</name>
+            <mount>M39</mount>
+            <focal>85-210</focal>
+            <apertures>3.8-22</apertures>
+        </Lens>
+        <Lens>
+            <name>MC KALEINAR-5N 100mm f2.8 </name>
+            <mount>F</mount>
+            <focal>100</focal>
+            <apertures>2.8-22</apertures>
+		 </Lens>
+        <Lens>
+            <name>TAIR-11 133mm f2.8</name>
+            <mount>M42</mount>
+            <focal>133</focal>
+            <apertures>2.8-22/3</apertures>
+		</Lens>
+        <Lens>
+            <name>OBERON 11K 200mm f/ 2.8</name>
+            <mount>PK</mount>
+            <focal>200</focal>
+            <apertures>2.8-32</apertures>
+		</Lens>
+        <Lens>
+            <name>ZM-6A 500mm f6.3 Mirror</name>
+            <mount>M42</mount>
+            <focal>500</focal>
+            <apertures>6.3</apertures>
+		</Lens>		
+    </LENSES>
+    <SPECIALS>
+        <Special>
+            <name>LT II</name>
+            <math>0.72</math>
+            <description>Lens Turbo II Focal Reducer 0.72x</description>
+        </Special>
+        <Special>
+            <name>TC 1.4x</name>
+            <math>1.4</math>
+            <description>Tele converter 1.4x C/Y</description>
+        </Special>
+		<Special>
+            <name>Tube 12mm</name>
+            <math>0.12</math>
+            <description>Extension tube 12mm</description>
+        </Special>
+    </SPECIALS>
+</Contents>

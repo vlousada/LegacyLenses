@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LegacyLenses</string>
+
+    <string-array name="FF_Coc">
+        <item>0.030</item>
+        <item>0.0375</item>
+        <item>0.027</item>
+        <item>0.02</item>
+        <item>0.0176</item>
+        <item>0.012</item>
+        <item>0.0975</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contents>
+    <LENSES>
+        <Lens>
+            <name>Name_of_the_lens_01</name>
+            <mount>M42</mount>
+            <focal>50</focal>
+            <apertures>1.4-22</apertures>
+        </Lens>
+        <Lens>
+            <name>Name_of_the_lens_02</name>
+            <mount>MD</mount>
+            <focal>35-70</focal>
+            <apertures>3.5-22</apertures>
+        </Lens>
+    </LENSES>
+    <SPECIALS>
+        <Special>
+            <name>LT II</name>
+            <math>0.72</math>
+            <description>Lens Turbo II Focal Reducer 0.72x</description>
+        </Special>
+        <Special>
+            <name>TC 1.4x</name>
+            <math>1.4</math>
+            <description>Tele converter 1.4x C/Y</description>
+        </Special>
+    </SPECIALS>
+</Contents>

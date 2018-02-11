@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.vlousada.legacylenses"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application android:label="@string/app_name"
+    	android:icon="@drawable/icon">
+        <activity
+            android:name="com.vlousada.legacylenses.MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.github.obs1dium.MinShutterActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+        android:name="com.vlousada.legacylenses.SetFocalLenghtActivity"
+        android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+            android:name="com.vlousada.legacylenses.MenuActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.vlousada.legacylenses.TabLensesActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+            android:name="com.vlousada.legacylenses.TabSpecialActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+            android:name="com.vlousada.legacylenses.TabSettingsActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+            android:name="com.github.ma1co.pmcademo.app.PlaybackActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity
+            android:name="com.github.ma1co.pmcademo.app.ImageActivity"
+            android:theme="@android:style/Theme.Black">
+        </activity>
+    </application>
+
+</manifest>

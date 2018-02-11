@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lRoot">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surfaceView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helios 40-2 58mm f/2.8 M42"
+        android:id="@+id/tv_LensName"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:maxLength="60"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="zoom"
+        android:id="@+id/tv_LegacyFocal"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/tv_LensName"
+        android:layout_alignRight="@+id/tv_LensName"
+        android:layout_marginTop="30dp"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_LegacySpecial"
+        android:layout_below="@+id/tv_LensName"
+        android:layout_alignRight="@+id/tv_LensName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp" />
+
+    <com.github.obs1dium.GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vGrid" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivMode"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="2dp"
+        android:minWidth="40dp"
+        android:scaleType="center"
+        android:clickable="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="64dp"
+        android:layout_alignRight="@+id/surfaceView"
+        android:layout_alignBottom="@+id/surfaceView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivDriveMode"
+        android:layout_alignLeft="@+id/ivMode"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="2dp"
+        android:scaleType="center"
+        android:minWidth="40dp"
+        android:clickable="true"
+        android:layout_above="@+id/ivMode"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Magnification"
+        android:id="@+id/tvMagnification"
+        android:layout_alignTop="@+id/surfaceView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/surfaceView"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:layout_margin="2dp"
+        android:textSize="18dp"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLog"
+        android:layout_above="@+id/lInfoBottom"
+        android:layout_alignTop="@+id/surfaceView"
+        android:textSize="10dp"
+        tools:text="Log"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="4dp"/>
+
+    <com.github.obs1dium.PreviewNavView
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:id="@+id/vPreviewNav"
+        android:layout_above="@+id/lInfoBottom"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Msg"
+        android:id="@+id/tvMsg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="38dp"
+        android:textColor="@android:color/white"/>
+
+    <com.github.obs1dium.HistogramView
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:id="@+id/vHist"
+        tools:background="#fcf75c"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/lInfoBottom"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lInfoBottom"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp"
+                tools:text="Shutter"
+                android:id="@+id/tvShutter"
+                android:layout_weight="0.8"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                tools:background="#f86d6d"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:layout_gravity="bottom"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp"
+                tools:text="F/2.8"
+                android:id="@+id/tv_LegacyAperture"
+                android:layout_weight="0.8"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                tools:background="#6df88d"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:layout_gravity="bottom"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp"
+                tools:text="ISO"
+                android:id="@+id/tvISO"
+                android:layout_weight="0.8"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                tools:background="#90a0fa"
+                android:clickable="true"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:layout_gravity="bottom" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18dp"
+                tools:text="EV"
+                android:id="@+id/tvExposureCompensation"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@android:color/white"
+                tools:background="#502080"
+                android:clickable="true"
+                android:singleLine="true"
+                android:ellipsize="none"
+                android:layout_gravity="bottom" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                tools:background="#1547f0"
+                android:layout_height="wrap_content"
+                android:id="@+id/lExposure">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18dp"
+                    tools:text="EV"
+                    android:id="@+id/tvExposure"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Hint"
+        android:id="@+id/tvHint"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:ellipsize="none"/>
+
+</RelativeLayout>

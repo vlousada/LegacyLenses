@@ -1,6 +1,6 @@
 <img src="https://cloud.githubusercontent.com/assets/20803070/17571771/7a71cb26-5f49-11e6-824f-8a3ce3dafd62.png" align="right"/>
 # legacyLensesExif. 
-An App to WRITE/LOG/TRACE information (EXIF) rom Legacy lenses into Sony alpha cameras.  It uses the [OpenMemories Framework](https://github.com/ma1co/OpenMemories-Framework).  This App was written specifically for use with LEGACY lenses (no electronic contacts) where no Exif is reported onSony MILC. However with this App, someone can create **legacy lens profiles**, then choose lens from interface App and SAVE **log the information** to SDCard for each photo taken.
+An App to WRITE/LOG/TRACE information (EXIF) from Legacy lenses into Sony alpha cameras.  It uses the [OpenMemories Framework](https://github.com/ma1co/OpenMemories-Framework).  This App was written specifically for use with LEGACY lenses (no electronic contacts) where no Exif is reported onSony MILC. However with this App, someone can create **legacy lens profiles**, then choose lens from interface App and SAVE **log the information** to SDCard for each photo taken.
 
 <img src="https://cloud.githubusercontent.com/assets/20803070/17577067/84b5310e-5f71-11e6-97e3-c089f88ba8e8.png" align="right" />
 

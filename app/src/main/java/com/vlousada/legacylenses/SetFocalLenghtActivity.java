@@ -82,7 +82,6 @@ public class SetFocalLenghtActivity extends BaseActivity implements SeekBar.OnSe
     @Override
     protected boolean onUpperDialChanged(int value)
     {
-
         m_sbFocal.incrementProgressBy(value);
         return true;
 
@@ -91,7 +90,6 @@ public class SetFocalLenghtActivity extends BaseActivity implements SeekBar.OnSe
     @Override
     protected boolean onLowerDialChanged(int value)
     {
-
         m_sbFocal.incrementProgressBy(value);
         return true;
 

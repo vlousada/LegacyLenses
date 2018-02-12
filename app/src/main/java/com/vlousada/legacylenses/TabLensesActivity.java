@@ -221,12 +221,13 @@ public class TabLensesActivity extends BaseActivity{
 
     }
 
-
+@Override
     protected boolean onEnterKeyDown()
     {
         onBackPressed();
         return true;
     }
+
 
     @Override
     protected boolean onPlayKeyDown()

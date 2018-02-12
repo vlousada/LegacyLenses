@@ -215,7 +215,6 @@ public class MainActivity extends BaseActivity implements SurfaceHolder.Callback
         m_tvLegacyLensName.setText("Lens Xpto"); //init Lens Name
         m_tvLegacyFocal.setText("50mm"); //init Lens focal
 
-        m_exifInfo = new ExifInfo();
 
         m_cameraModel = getDeviceInfo().getModel().toString();
 
@@ -229,7 +228,9 @@ public class MainActivity extends BaseActivity implements SurfaceHolder.Callback
         if (isZoomLegacy(m_prefs.getMinFocal(), m_prefs.getMaxFocal()))
             m_legacyZoom = true;
 
-
+        if (LLUtils.isEXIFSupported()) {
+            m_exifInfo = new ExifInfo();
+        }
     }
 
     @Override

@@ -33,7 +33,7 @@ public class LLUtils {
 
     public static final String[] SUPPORTED_MODELS = new String[]{
             "NEX-6","NEX-5T","ILCE-7","ILCE-7R","ILCE-5000","ILCE-6000","ILCE-7S","ILCE-5100",
-            "ILCE-7M2","ILCE-7R2","ILCE-7S2","ILCE-6300","ILCE-6500"
+            "ILCE-7M2","ILCE-7RM2","ILCE-7SM2","ILCE-6300","ILCE-6500"
     };
 
 
@@ -62,8 +62,8 @@ public class LLUtils {
                 put("ILCE-6300", new int[] {ScalarInput.ISV_KEY_AEL_AFMF, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //a6300
                 put("ILCE-6500", new int[] {ScalarInput.ISV_KEY_AEL, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //a6500
                 put("ILCE-7M2", new int[] {ScalarInput.ISV_KEY_CUSTOM3, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //A7II
-                put("ILCE-7R2", new int[] {ScalarInput.ISV_KEY_CUSTOM3, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //A7R2
-                put("ILCE-7S2", new int[] {ScalarInput.ISV_KEY_CUSTOM3, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //A7S2
+                put("ILCE-7RM2", new int[] {ScalarInput.ISV_KEY_CUSTOM3, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //A7R2
+                put("ILCE-7SM2", new int[] {ScalarInput.ISV_KEY_CUSTOM3, ScalarInput.ISV_KEY_FN, ScalarInput.ISV_KEY_STASTOP}); //A7S2
             }});
 
     //MAP FEATURES from camera models
@@ -80,8 +80,8 @@ public class LLUtils {
                 put("ILCE-6300", new float[] {1.5f, 0f, 2f, 0f}); //A6300
                 put("ILCE-6500", new float[] {1.5f, 0f, 2f, 0f}); //A6500
                 put("ILCE-7M2", new float[] {1.0f, 0f, 3f, 0f}); //A7II
-                put("ILCE-7R2", new float[] {1.0f, 0f, 3f, 0f}); //A7R2
-                put("ILCE-7S2", new float[] {1.0f, 0f, 3f, 0f}); //A7S2
+                put("ILCE-7RM2", new float[] {1.0f, 0f, 3f, 0f}); //A7R2
+                put("ILCE-7SM2", new float[] {1.0f, 0f, 3f, 0f}); //A7S2
             }});
 
     /*      ********EXAMPLE to get KEY_FUNC from Model ILCE-7 **********
